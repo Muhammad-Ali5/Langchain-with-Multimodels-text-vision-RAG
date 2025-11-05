@@ -25,7 +25,7 @@ except RuntimeError:
 load_dotenv()
 groq_api_key = os.environ["GROQ_API_KEY"]
 
-os.environ['GOOGLE_API_KEY'] = "AIzaSyBRe8NDmbb-T0MsTOucJs0cOLmxJ6kxPCs"
+os.environ['GOOGLE_API_KEY'] = "AIzaSyBRe8NDmbb-..........................s"
 
 st.title("ChatGroq + LangChain Demo")
 url = st.text_input("Enter the Website link to load content : ")
@@ -70,4 +70,5 @@ if "vectors" in st.session_state:
         with st.expander(" Relevant Document Chunks:"):
             for i, doc in enumerate(response["context"]):
                 st.write(doc.page_content)
+
                 st.write("-----------------------------------")
